@@ -233,9 +233,11 @@ return {
 	  
 	  elem.on('touchmove',function(){
 		if (attr.simultaneousTouch == "yT"){
+			alert('touchmove on yT');
 			scope.downFor = 0;
 			$interval.cancel(promise);
 		}else if (attr.simultaneousTouch == "pT"){
+			alert('touchmove on pT');
 			scope.downFor2 = 0;
 			$interval.cancel(promise2);
 		}
